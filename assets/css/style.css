@@ -7,7 +7,6 @@
     text-decoration: none;
     border: none;
     outline: none;
-    scroll-behavior: smooth;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -49,7 +48,28 @@ html {
 
 body {
     color: var(--white-color);
-    overflow-x: hidden;
+}
+
+/* Estilo da Scrollbar para navegadores WebKit (Chrome, Edge, Safari) */
+::-webkit-scrollbar {
+  width: 8px;              /* Largura da barra vertical */
+  height: 8px;             /* Altura da barra horizontal */
+}
+
+::-webkit-scrollbar-track {
+  background: #1a1f2b;     /* Fundo da área da barra (match com o fundo do site) */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--second-bg-color);  /* Cor da "alça" da scrollbar (verde neon) */
+  border-radius: 10px;
+  border: 2px solid #1a1f2b;  /* Borda para criar espaço entre o fundo e a barra */
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--second-bg-color) #1a1f2b;
 }
 
 /* ================== header ================== */
@@ -171,7 +191,7 @@ section.active {
     100% {
         visibility: visible;
         opacity: 1;
-        overflow: hidden;
+        overflow: auto;
     }
 }
 
@@ -179,6 +199,7 @@ section.active {
 .home {
     display: flex;
     align-items: center;
+    gap: 5rem;
 }
 
 .home-detail h1 {
@@ -294,7 +315,6 @@ section.active {
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    margin-left: 50px;
 }
 
 /* animação img */
@@ -333,7 +353,7 @@ section.active {
 }
 
 .home-img .img-box .img-item img {
-    position: relative;
+    position: absolute;
     top: 3rem;
     display: block;
     width: 85%;
@@ -363,7 +383,7 @@ section.active {
     background: var(--second-bg-color);
     border: .2rem solid var(--second-bg-color);
     border-radius: 1rem;
-    transition: .4s;
+    transition: .5s;
 }
 
 .services-container .services-box:hover {
@@ -432,7 +452,7 @@ section.active {
 }
 
 .resume-box h2 {
-    font-size: 3rem;
+    font-size: 4.5rem;
 }
 
 .resume-box span {
@@ -487,7 +507,7 @@ section.active {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     gap: 2rem;
-    max-height: 38rem;
+    max-height: 45rem;
     overflow-y: auto;
     padding-right: 1rem;
     /* Espaço para a scrollbar */
@@ -496,6 +516,7 @@ section.active {
     scrollbar-color: var(--main-color) transparent;
     /* Firefox */
 }
+
 
 .resume-list .resume-item {
     background: var(--second-bg-color);
@@ -519,7 +540,7 @@ section.active {
     position: relative;
     margin-left: 2rem;
     margin-bottom: 2rem;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
 
 .resume-item .company::before {
@@ -807,10 +828,12 @@ section.active {
     }
 
     section {
-    padding: 10rem 4% 2rem;
-    height: 100vh; /* altura da viewport */
-    overflow-y: auto; /* ativa rolagem vertical */
-}
+        padding: 10rem 4% 2rem;
+        height: 100vh;
+        /* altura da viewport */
+        overflow-y: auto;
+        /* ativa rolagem vertical */
+    }
 
 }
 
@@ -877,7 +900,7 @@ section.active {
     }
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 600px) {
     .home-img .img-box {
         width: 30rem;
         height: 30rem;
@@ -895,6 +918,7 @@ section.active {
 }
 
 @media screen and (max-width: 400px) {
+
     .home-detail,
     .resume-box h2,
     .resume-box .heading,
