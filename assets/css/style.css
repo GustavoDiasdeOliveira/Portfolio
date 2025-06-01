@@ -8,6 +8,8 @@
     border: none;
     outline: none;
     font-family: 'Poppins', sans-serif;
+    scrollbar-width: thin;
+    scrollbar-color: var(--second-bg-color) #1a1f2b;
 }
 
 :root {
@@ -48,28 +50,29 @@ html {
 
 body {
     color: var(--white-color);
+    overflow-x: hidden;
+    background-color: var(--bg-color);
 }
 
 /* Estilo da Scrollbar para navegadores WebKit (Chrome, Edge, Safari) */
 ::-webkit-scrollbar {
-  width: 8px;              /* Largura da barra vertical */
-  height: 8px;             /* Altura da barra horizontal */
+    width: 8px;
+    /* Largura da barra vertical */
+    height: 8px;
+    /* Altura da barra horizontal */
 }
 
 ::-webkit-scrollbar-track {
-  background: #1a1f2b;     /* Fundo da área da barra (match com o fundo do site) */
+    background: #1a1f2b;
+    /* Fundo da área da barra (match com o fundo do site) */
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: var(--second-bg-color);  /* Cor da "alça" da scrollbar (verde neon) */
-  border-radius: 10px;
-  border: 2px solid #1a1f2b;  /* Borda para criar espaço entre o fundo e a barra */
-}
-
-/* Firefox */
-* {
-  scrollbar-width: thin;
-  scrollbar-color: var(--second-bg-color) #1a1f2b;
+    background-color: var(--second-bg-color);
+    /* Cor da "alça" da scrollbar (verde neon) */
+    border-radius: 10px;
+    border: 2px solid #1a1f2b;
+    /* Borda para criar espaço entre o fundo e a barra */
 }
 
 /* ================== header ================== */
@@ -179,7 +182,7 @@ section {
     padding: 10rem 9% 2rem;
     visibility: hidden;
     opacity: 0;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 section.active {
@@ -358,7 +361,6 @@ section.active {
     display: block;
     width: 85%;
     object-fit: cover;
-    mix-blend-mode: lighten;
 }
 
 /* ================== services ================== */
@@ -902,8 +904,8 @@ section.active {
 
 @media screen and (max-width: 600px) {
     .home-img .img-box {
-        width: 30rem;
-        height: 30rem;
+        width: 20rem;
+        height: 20rem;
     }
 
     .contact-box .field-box {
@@ -925,6 +927,10 @@ section.active {
     .resume-box .desc,
     .resume-detail.about .resume-item {
         text-align: center;
+    }
+
+    .home-detail h2 {
+        font-size: 24px;
     }
 
     .home-detail .btn-sci {
