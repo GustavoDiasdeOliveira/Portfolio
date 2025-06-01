@@ -197,6 +197,10 @@ section.active {
     }
 }
 
+section.home.active {
+   background: var(--bg-color);
+}
+
 /* home */
 .home {
     display: flex;
@@ -817,12 +821,14 @@ section.active {
 
 /* ================== Responsive Design ================== */
 
+/* Desktops grandes até 1200px */
 @media screen and (max-width: 1200px) {
     html {
         font-size: 55%;
     }
 }
 
+/* Desktops médios até 992px */
 @media screen and (max-width: 992px) {
     header {
         padding: 2rem 4%;
@@ -830,20 +836,19 @@ section.active {
 
     section {
         padding: 10rem 4% 2rem;
-        height: 100vh;
-        /* altura da viewport */
-        overflow-y: auto;
-        /* ativa rolagem vertical */
+        height: 100vh; /* altura da viewport */
+        overflow-y: auto; /* ativa rolagem vertical */
     }
-
 }
 
+/* Larguras até 810px */
 @media screen and (max-width: 810px) {
     .contact-box .field-box {
         grid-template-columns: 1fr;
     }
 }
 
+/* Tablets e mobiles maiores até 768px */
 @media screen and (max-width: 768px) {
     #menu-icon {
         display: block;
@@ -901,6 +906,7 @@ section.active {
     }
 }
 
+/* Smartphones médios até 600px */
 @media screen and (max-width: 600px) {
     .home-img .img-box {
         width: 20rem;
@@ -912,14 +918,15 @@ section.active {
     }
 }
 
+/* Smartphones pequenos até 450px */
 @media screen and (max-width: 450px) {
     html {
         font-size: 50%;
     }
 }
 
+/* Samsung Galaxy A15 e similares (360-400px) */
 @media screen and (max-width: 400px) {
-
     .home-detail,
     .resume-box h2,
     .resume-box .heading,
