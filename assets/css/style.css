@@ -51,7 +51,6 @@ html {
 body {
     color: var(--white-color);
     overflow-x: hidden;
-    background-color: var(--bg-color);
 }
 
 /* Estilo da Scrollbar para navegadores WebKit (Chrome, Edge, Safari) */
@@ -176,7 +175,7 @@ nav a.active {
 
 /* ================== section ================== */
 section {
-    position: absolute;
+    position: fixed;
     width: 100%;
     height: 100%;
     padding: 10rem 9% 2rem;
