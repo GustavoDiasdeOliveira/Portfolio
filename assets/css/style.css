@@ -48,6 +48,10 @@ html {
     font-size: 62.5%;
 }
 
+br {
+    display: none;
+}
+
 body {
     color: var(--white-color);
     overflow-x: hidden;
@@ -867,6 +871,10 @@ section.home.active {
         display: none;
     }
 
+    br {
+        display: inline;
+    }
+
     nav.active {
         display: block;
     }
@@ -916,12 +924,20 @@ section.home.active {
     .contact-box .field-box {
         grid-template-columns: 1fr;
     }
+
+    br {
+        display: inline;
+    }
 }
 
 /* Smartphones pequenos até 450px */
 @media screen and (max-width: 450px) {
     html {
         font-size: 50%;
+    }
+
+    br {
+        display: inline;
     }
 }
 
@@ -933,6 +949,10 @@ section.home.active {
     .resume-box .desc,
     .resume-detail.about .resume-item {
         text-align: center;
+    }
+
+    br {
+        display: inline;
     }
 
     .home-detail h2 {
