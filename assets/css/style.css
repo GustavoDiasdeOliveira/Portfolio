@@ -109,7 +109,7 @@ header.active {
 
 .logo {
     font-size: 3rem;
-    color: var(--color-zukkin);
+    color: var(--main-color);
     font-weight: 700;
 }
 
@@ -123,7 +123,7 @@ nav a {
 
 nav a:hover,
 nav a.active {
-    color: var(--color-zukkin);
+    color: var(--main-color);
 }
 
 /* menu-icon */
@@ -228,7 +228,7 @@ section.home.active {
     position: relative;
     display: inline-block;
     color: transparent;
-    -webkit-text-stroke: .07rem var(--color-zukkin);
+    -webkit-text-stroke: .07rem var(--main-color);
     animation: display-text 16s linear infinite;
     animation-delay: calc(-4s * var(--i));
 }
@@ -245,8 +245,8 @@ section.home.active {
     content: attr(data-text);
     position: absolute;
     width: 0;
-    border-right: .2rem solid var(--color-zukkin);
-    color: var(--color-zukkin);
+    border-right: .2rem solid var(--main-color);
+    color: var(--main-color);
     white-space: nowrap;
     overflow: hidden;
     animation: fill-text 4s linear infinite;
@@ -278,10 +278,10 @@ section.home.active {
 .btn {
     display: inline-block;
     padding: 1rem 3rem;
-    background: var(--color-zukkin);
-    border: .2rem solid var(--color-zukkin);
+    background: var(--main-color);
+    border: .2rem solid var(--main-color);
     border-radius: 4rem;
-    box-shadow: 0 0 1rem var(--color-zukkin);
+    box-shadow: 0 0 1rem var(--main-color);
     font-size: 1.6rem;
     color: var(--bg-color);
     font-weight: 500;
@@ -290,7 +290,7 @@ section.home.active {
 
 .btn:hover {
     background: transparent;
-    color: var(--color-zukkin);
+    color: var(--main-color);
     box-shadow: none;
 }
 
@@ -301,18 +301,18 @@ section.home.active {
 .home-detail .btn-sci .sci a {
     display: inline-flex;
     padding: .8rem;
-    border: .2rem solid var(--color-zukkin);
+    border: .2rem solid var(--main-color);
     border-radius: 50%;
     font-size: 2rem;
-    color: var(--color-zukkin);
+    color: var(--main-color);
     margin: 0 .8rem;
     transition: .5s;
 }
 
 .home-detail .btn-sci .sci a:hover {
-    background: var(--color-zukkin);
+    background: var(--main-color);
     color: var(--bg-color);
-    box-shadow: 0 0 1rem var(--color-zukkin);
+    box-shadow: 0 0 1rem var(---main-color);
 }
 
 /* home-img */
@@ -335,7 +335,7 @@ section.home.active {
     position: absolute;
     width: 50rem;
     height: 50rem;
-    background: conic-gradient(transparent, transparent, transparent, var(--color-zukkin));
+    background: conic-gradient(transparent, transparent, transparent, var(--main-color));
     transform: rotate(0deg);
     animation: rotate-border 10s linear infinite;
 }
@@ -367,7 +367,7 @@ section.home.active {
     position: absolute;
     top: 3rem;
     display: block;
-    width: 85%;
+    width: 100%;
     object-fit: cover;
 }
 
@@ -379,7 +379,7 @@ section.home.active {
 }
 
 .heading span {
-    color: var(--color-zukkin);
+    color: var(--main-color);
 }
 
 .services-container {
@@ -397,7 +397,7 @@ section.home.active {
 }
 
 .services-container .services-box:hover {
-    border-color: var(--color-zukkin);
+    border-color: var(--main-color);
     transform: scale(1.02);
 }
 
@@ -408,7 +408,7 @@ section.home.active {
 }
 
 .services-box:hover .icon :not(a i) {
-    color: var(--color-zukkin);
+    color: var(--main-color);
 }
 
 .services-box .icon i {
@@ -425,7 +425,7 @@ section.home.active {
 }
 
 .services-box:hover .icon a {
-    background: var(--color-zukkin);
+    background: var(--main-color);
 }
 
 .services-box .icon a i {
@@ -447,7 +447,7 @@ section.home.active {
 }
 
 .services-box:hover h3 {
-    color: var(--color-zukkin);
+    color: var(--main-color);
 }
 
 .services-box p {
@@ -466,7 +466,7 @@ section.home.active {
 }
 
 .resume-box span {
-    color: var(--color-zukkin);
+    color: var(--main-color);
 }
 
 .resume-box p {
@@ -493,8 +493,8 @@ section.home.active {
 }
 
 .resume-box .resume-btn.active {
-    border-color: var(--color-zukkin);
-    color: var(--color-zukkin);
+    border-color: var(--main-color);
+    color: var(--main-color);
 }
 
 /* fim resume-btn */
@@ -523,7 +523,7 @@ section.home.active {
     /* Espaço para a scrollbar */
     scrollbar-width: thin;
     /* Firefox */
-    scrollbar-color: var(--color-zukkin) transparent;
+    scrollbar-color: var(--main-color) transparent;
     /* Firefox */
 }
 
@@ -539,7 +539,7 @@ section.home.active {
 }
 
 .resume-item .year {
-    color: var(--color-zukkin);
+    color: var(--main-color);
 }
 
 .resume-item h3 {
@@ -559,7 +559,7 @@ section.home.active {
     top: 50%;
     transform: translateY(-50%);
     padding: .5rem;
-    background: var(--color-zukkin);
+    background: var(--main-color);
     border-radius: 50%;
     margin-left: -2rem;
 }
@@ -581,7 +581,7 @@ section.home.active {
 
 .info-grid strong {
     margin-right: 6px;
-    color: var(--color-zukkin);
+    color: var(--main-color);
     /* cor verde para os títulos */
 }
 
@@ -602,7 +602,7 @@ section.home.active {
 }
 
 .portfolio-detail span {
-    color: var(--color-zukkin);
+    color: var(--main-color);
 }
 
 .portfolio-box .numb {
@@ -623,7 +623,7 @@ section.home.active {
 
 .portfolio-box .tech {
     margin: 2rem 0;
-    color: var(--color-zukkin);
+    color: var(--main-color);
     border-bottom: .1rem solid var(--white-color);
     padding-bottom: 2rem;
 }
@@ -640,7 +640,7 @@ section.home.active {
 }
 
 .portfolio-box .live-github a:hover {
-    color: var(--color-zukkin);
+    color: var(--main-color);
 }
 
 .portfolio-box .live-github a:first-child {
@@ -662,7 +662,7 @@ section.home.active {
     border-radius: .6rem;
     pointer-events: none;
     background: #2a2e35;
-    color: var(--color-zukkin);
+    color: var(--main-color);
     opacity: 0;
     transition: .2s;
 }
@@ -716,10 +716,10 @@ section.home.active {
     display: inline-flex;
     padding: .4rem;
     background: var(--second-bg-color);
-    border: .2rem solid var(--color-zukkin);
+    border: .2rem solid var(--main-color);
     border-radius: .6rem;
     font-size: 4rem;
-    color: var(--color-zukkin);
+    color: var(--main-color);
 }
 
 .portfolio-box .navigation button.disabled {
@@ -747,7 +747,7 @@ section.home.active {
 }
 
 .contact-box span {
-    color: var(--color-zukkin);
+    color: var(--main-color);
 }
 
 .contact-box p {
@@ -767,7 +767,7 @@ section.home.active {
 .contact-detail i {
     display: inline-flex;
     background-color: var(--second-bg-color);
-    color: var(--color-zukkin);
+    color: var(--main-color);
     font-size: 3rem;
     padding: 1.2rem;
     border-radius: 2rem;
@@ -775,7 +775,7 @@ section.home.active {
 }
 
 .contact-detail #desc {
-    color: var(--color-zukkin);
+    color: var(--main-color);
 }
 
 /* formulario */
@@ -815,7 +815,7 @@ section.home.active {
 
 .contact-box .field-box input:focus,
 .contact-box .field-box textarea:focus {
-    border-color: var(--color-zukkin);
+    border-color: var(--main-color);
 }
 
 .contact-box .btn {
