@@ -13,10 +13,12 @@
 }
 
 :root {
-    --bg-color: #1f242d;
-    --second-bg-color: #323946;
+    /* --bg-color: #1f242d;
+    --second-bg-color: #323946; */
+    --bg-color: #0C1022;
+    --second-bg-color: #171b2c;
     --white-color: #fff;
-    --main-color: #7cf03d;
+    --main1-color: #7cf03d;
     --main2-color: #0ef;
     --main3-color: #00bfff;
     --disabled-color: #fff3;
@@ -25,21 +27,27 @@
     --color-dark-50: #797984;
     --color-dark-100: #312d37;
     --color-dark-900: #000;
+
     --color-blue-50: #3b82f6;
     --color-blue-100: #2563eb;
     --color-blue-200: #1d4ed8;
-    --color-zukkin: #ff3b3d;
+
+    --main-color: #ff3b3d;
     --color-red-50: #ef4444;
     --color-red-100: #dc2626;
     --color-red-200: #b91c1c;
+
     --color-red-darker-100: #6D0707;
     --color-red-darker-200: #82090D;
+
     --color-green-light-50: #00ff08;
     --color-green-light-100: #00b205;
     --color-green-light-200: #007f04;
+
     --color-green-50: #00b86a;
     --color-green-100: #006e3f;
     --color-green-200: #003f21;
+    
     --color-purple-50: #7c3aed;
     --color-purple-100: #a855f7;
     --color-purple-200: #bf46ef;
@@ -93,6 +101,7 @@ header {
     z-index: 100;
     visibility: hidden;
     opacity: 0;
+    border-bottom: .1rem solid var(--second-bg-color);
 }
 
 header.active {
