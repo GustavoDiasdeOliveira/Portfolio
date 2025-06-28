@@ -728,6 +728,7 @@ section.home.active {
     border-radius: .6rem;
     font-size: 4rem;
     color: var(--main-color);
+    cursor: pointer;
 }
 
 .portfolio-box .navigation button.disabled {

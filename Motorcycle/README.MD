@@ -1,0 +1,1 @@
+![Banner do projeto](./assets/js/foto.png)
