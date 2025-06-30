@@ -697,7 +697,7 @@ section.home.active {
 .portfolio-carousel .img-slide {
     display: grid;
     grid-auto-flow: column;
-    grid-template-columns: repeat(8, 100%);
+    grid-template-columns: repeat(20, 100%);
     gap: 2rem;
     height: inherit;
     transition: .5s;
