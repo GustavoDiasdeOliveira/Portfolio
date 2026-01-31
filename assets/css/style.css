@@ -17,8 +17,8 @@
     --second-bg-color: #323946; */
     /* --bg-color: #0C1022;
     --second-bg-color: #171b2c; */
-    --bg-color: #000000;
-    --second-bg-color: #0d0f12;
+    --bg-color: #0E0A14;
+    --second-bg-color: #1A1324;
     --white-color: #fff;
     --main1-color: #7cf03d;
     --main2-color: #0ef;
@@ -42,9 +42,8 @@
     --color-red-darker-100: #6D0707;
     --color-red-darker-200: #82090D;
 
-    --main-color: #00ff08;
-    --color-green-light-100: #00b205;
-    --color-green-light-200: #007f04;
+    --main-color: #EA4B71;
+
 
     --color-green-50: #00b86a;
     --color-green-100: #006e3f;
@@ -464,13 +463,15 @@ section.home.active {
     font-size: 1.6rem;
 }
 
-/* ================== resume ================== */
+/* ================== RESUME ================== */
+
 .resume-container {
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: 5rem;
 }
 
+/* ================== BOX ================== */
 .resume-box h2 {
     font-size: 4.5rem;
 }
@@ -488,7 +489,7 @@ section.home.active {
     text-align: left;
 }
 
-/* resume-btn */
+/* ================== BOTÕES ================== */
 .resume-box .resume-btn {
     width: 100%;
     height: 5rem;
@@ -500,6 +501,12 @@ section.home.active {
     margin-bottom: 2rem;
     border-radius: .8rem;
     cursor: pointer;
+    transition: .3s ease;
+}
+
+.resume-box .resume-btn:hover {
+    border-color: var(--main-color);
+    color: var(--main-color);
 }
 
 .resume-box .resume-btn.active {
@@ -507,37 +514,36 @@ section.home.active {
     color: var(--main-color);
 }
 
-/* fim resume-btn */
-
+/* ================== CONTEÚDO ================== */
 .resume-detail {
     display: none;
 }
 
 .resume-detail.active {
     display: block;
+    max-height: 64.1rem; /* controla quando aparece a rolagem */
+    overflow-y: auto;
+    padding-right: 1rem;
 }
 
+#education {
+    max-height: 64rem;
+}
+
+/* ================== TÍTULO ================== */
 .resume-box .heading {
     font-size: 3.5rem;
     text-align: left;
 }
 
-/* Container com barra de rolagem vertical */
+/* ================== LISTA ================== */
 .resume-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     gap: 2rem;
-    max-height: 45rem;
-    overflow-y: auto;
-    padding-right: 1rem;
-    /* Espaço para a scrollbar */
-    scrollbar-width: thin;
-    /* Firefox */
-    scrollbar-color: var(--main-color) transparent;
-    /* Firefox */
 }
 
-
+/* ================== ITEM ================== */
 .resume-list .resume-item {
     background: var(--second-bg-color);
     border-radius: .8rem;
@@ -546,6 +552,12 @@ section.home.active {
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+/* ================== TEXTOS ================== */
+.resume-item p {
+    font-size: 1.5rem;
+    line-height: 1.6;
 }
 
 .resume-item .year {
@@ -568,11 +580,55 @@ section.home.active {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    padding: .5rem;
+    width: .8rem;
+    height: .8rem;
     background: var(--main-color);
     border-radius: 50%;
-    margin-left: -2rem;
+    left: -2rem;
 }
+
+/* ================== SCROLLBAR ================== */
+/* Chrome / Edge */
+.resume-detail::-webkit-scrollbar {
+    width: 6px;
+}
+
+.resume-detail::-webkit-scrollbar-thumb {
+    background-color: var(--main-color);
+    border-radius: 10px;
+}
+
+.resume-detail::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+/* Firefox */
+.resume-detail {
+    scrollbar-width: thin;
+    scrollbar-color: var(--main-color) transparent;
+}
+
+/* ================== RESPONSIVO ================== */
+@media (max-width: 991px) {
+    .resume-container {
+        grid-template-columns: 1fr;
+    }
+
+    .resume-detail.active {
+        max-height: 50rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .resume-list {
+        grid-template-columns: 1fr;
+    }
+
+    .resume-detail.active {
+        max-height: 45rem;
+    }
+}
+
 
 .info-grid {
     display: grid;
