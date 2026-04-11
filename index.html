@@ -4,720 +4,622 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- box icons -->
+    <title>Portfólio | Gustavo Dias</title>
+    
+    <link rel="shortcut icon" href="assets/images/LOGO_G-Photoroom-transformed.png" type="image/x-icon">
+    
+    <!-- BOX ICONS -->
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
-    <!-- BOOTSTRAP ICONS -->
-    <!-- Linking Google fonts for icons -->
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
-    <!-- Linking SwiperJS CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-    <!-- META TAG DE VIEWPORT -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
-    <!-- FIM GOOGLE FONTS -->
-    <!-- BOOTSTRAP ICONS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <!-- FIM BOOTSTRAP ICONS -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
     <!-- CSS -->
-    <link rel="shortcut icon" href="assets/images/LOGO_G-Photoroom-transformed.png" type="image/x-icon">
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Portfólio | Gustavo Dias</title>
 </head>
 
 <body>
-    <!--header-->
-    <header class="active">
-        <a href="index.html" class="logo">Gustavo.</a>
+    <!-- Cursor customizado -->
+    <div class="custom-cursor"></div>
 
-        <i class="bx bx-menu" id="menu-icon"></i>
+    <!-- Background animado premium -->
+    <div class="bg-layer">
+        <div class="glow-orb red"></div>
+        <div class="glow-orb blue"></div>
+    </div>
 
-        <nav>
-            <a href="#" class="active">Início</a>
-            <a href="#">Serviços</a>
-            <a href="#">Currículo</a>
-            <a href="#">Projetos</a>
-            <a href="#">Contato</a>
+    <!-- Header -->
+    <header class="header">
+        <a href="#home" class="logo">Gustavo<span>.</span></a>
 
-        </nav><!-- nav -->
-    </header><!-- /header-->
+        <nav class="navbar">
+            <a href="#home" class="nav-item active">Início</a>
+            <a href="#services" class="nav-item">Serviços</a>
+            <a href="#resume" class="nav-item">Currículo</a>
+            <a href="#portfolio" class="nav-item">Projetos</a>
+            <a href="#contact" class="nav-item">Contato</a>
+        </nav>
 
-    <!-- bars background-->
-    <div class="bars-box active">
-        <div class="bar" style="--i:6"></div>
-        <div class="bar" style="--i:5"></div>
-        <div class="bar" style="--i:4"></div>
-        <div class="bar" style="--i:3"></div>
-        <div class="bar" style="--i:2"></div>
-        <div class="bar" style="--i:1"></div>
-    </div><!-- bars background-->
+        <div class="header-actions">
+            <!-- Theme Toggle -->
+            <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Theme">
+                <i class='bx bx-moon'></i>
+            </button>
+            <i class="bx bx-menu-alt-right" id="menu-icon"></i>
+        </div>
+    </header>
 
-    <!--home section-->
-    <section class="home active">
-        <div class="home-detail">
-            <h1>Gustavo Dias</h1>
-            <h2>
-                <span style="--i:1" data-text="Experiência em Qualidade">Experiência em Qualidade</span>
-                <span style="--i:2" data-text="Web Designer e N8N">Web Designer e N8N</span>
-                <span style="--i:3" data-text="Estudante na UNIP">Estudante na UNIP</span>
-            </h2>
-            <p>Olá! Sou Gustavo Dias, estudante de Ciência da Computação na UNIP e entusiasta de Web Design e Automações
-                utilizando n8n. Tenho atuação no setor de Qualidade, com experiência em coleta, validação e análise de
-                dados, além de varreduras automatizadas em sites para pesquisas e apoio a estratégias de pricing. Estou
-                em constante aprendizado, desenvolvendo sites responsivos e automações que unem design, eficiência e
-                tecnologia. Confira minhas redes sociais e meu currículo para conhecer mais sobre meu trabalho!</p>
-            <div class="btn-sci">
-                <a href="dowload/Gustavo Dias de Oliveira.pdf" class="btn" id="download-btn">Download CV</a>
-                <div class="sci">
-                    <a href="https://www.instagram.com/gustavodevfront/" title="Instagram"><i
-                            class='bx bxl-instagram-alt'></i></a>
+    <main>
+        <!-- Home Section -->
+        <section class="home" id="home">
+            <div class="container layout-split">
+                <div class="home-detail fade-in">
+                    <h1>Gustavo Dias</h1>
+                    <h2 class="dynamic-typing">
+                        <span style="--i:1" data-text="Inteligência de Mercado">Inteligência de Mercado</span>
+                        <span style="--i:2" data-text="Pesquisa de Preços">Pesquisa de Preços</span>
+                        <span style="--i:3" data-text="Automações com IA & n8n">Automações com IA & n8n</span>
+                    </h2>    
+                    <p class="summary">Olá! Sou Gustavo Dias, estudante de Ciência da Computação na UNIP e entusiasta de Web Design e Automações utilizando n8n. Tenho atuação no setor de Qualidade, com experiência em coleta, validação e análise de dados, além de varreduras automatizadas em sites para pesquisas e apoio a estratégias de pricing. Estou em constante aprendizado, desenvolvendo sites responsivos e automações que unem design, eficiência e tecnologia. Confira minhas redes sociais e meu currículo para conhecer mais sobre meu trabalho!</p>
+                    <div class="btn-sci">
+                        <a href="dowload/Gustavo Dias de Oliveira.pdf" class="btn hover-fill" id="download-btn">Download CV</a>
+                        <div class="sci">
+                            <a href="https://www.linkedin.com/in/gustavo-dias-de-oliveira-615073299/" target="_blank" aria-label="Linkedin" class="glass-icon"><i class='bx bxl-linkedin'></i></a>
+                            <a href="https://github.com/GustavoDiasdeOliveira" target="_blank" aria-label="Github" class="glass-icon"><i class='bx bxl-github'></i></a>
+                        </div>
+                    </div>
+                </div>
 
-                    <a href="https://github.com/GustavoDiasdeOliveira" title="Github"><i class='bx bxl-github'></i></a>
+                <div class="home-img fade-in scroll-delay-1">
+                    <div class="img-wrapper glass-panel">
+                        <img src="assets/images/Foto2.jpg" alt="Foto de Gustavo Dias">
+                        <div class="spinning-border"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-                    <a href="https://www.linkedin.com/in/gustavo-dias-de-oliveira-615073299/" title="Linkedin"><i
-                            class='bx bxl-linkedin'></i></a>
-                </div><!-- sci -->
-            </div><!-- btn-sci -->
-            <br><br>
-        </div><!-- home-detail -->
+        <!-- Services Section -->
+        <section class="services section-padding" id="services">
+            <div class="container text-center">
+                <h2 class="heading fade-in">Minhas <span>Expertises</span></h2>
+                <div class="grid-3 fade-in scroll-delay-1">
+                    <!-- Servico 1 -->
+                    <div class="service-card glass-panel group-hover">
+                        <div class="icon-header">
+                            <div class="icon-fill"><i class='bx bx-code-alt'></i></div>
+                        </div>
+                        <h3>Web Designer</h3>
+                        <p>Criação de landing pages responsivas, com foco em usabilidade e conversão. Desenvolvimento com HTML, CSS, JavaScript, WordPress e Elementor, além de prototipação no Figma e versionamento com Git/GitHub.</p>
+                    </div>
 
-        <div class="home-img">
-            <div class="img-box">
-                <div class="img-item">
-                    <img src="assets/images/Foto2.jpg" alt="">
-                </div><!-- img-item -->
-            </div><!-- img-box -->
-        </div><!-- home-img -->
-    </section>
+                    <!-- Servico 2 -->
+                    <div class="service-card glass-panel group-hover">
+                        <div class="icon-header">
+                            <div class="icon-fill"><i class='bx bx-bar-chart-alt-2'></i></div>
+                        </div>
+                        <h3>Automações n8n</h3>
+                        <p>Desenvolvimento de automações inteligentes utilizando n8n, integrando APIs e sistemas como WhatsApp e Google Sheets. Criação de fluxos automatizados por eventos ou agendamentos, envio automático de mensagens, cartões e otimização de tarefas operacionais.</p>
+                    </div>
 
-    <!-- seção de serviços -->
-    <section class="services">
-        <h2 class="heading">Meus <span>Serviços</span></h2>
-        <div class="services-container">
-            <!-- 1º serviço -->
-            <div class="services-box">
-                <div class="icon">
-                    <i class='bx bx-code-alt'></i>
-                    <a href="#"><i class="bx bx-arrow-back"></i></a>
-                </div><!-- icon -->
-                <h3>Web Designer</h3>
-                <p>Criação de landing pages responsivas, com foco em usabilidade e conversão. Desenvolvimento com HTML,
-                    CSS, JavaScript, WordPress e Elementor, além de prototipação no Figma e versionamento com
-                    Git/GitHub.
-                </p>
-            </div><!-- services-box -->
+                    <!-- Servico 3 -->
+                    <div class="service-card glass-panel group-hover">
+                        <div class="icon-header">
+                            <div class="icon-fill"><i class='bx bx-certification'></i></div>
+                        </div>
+                        <h3>Qualidade & Dados</h3>
+                        <p>Atuação no controle e validação da qualidade de dados, com varreduras automatizadas em sites e aplicações, data cleansing, análise de padrões e inconsistências, e apoio a estratégias de pricing e inteligência de mercado, garantindo informações confiáveis para tomada de decisão.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-            <!-- 2º serviço -->
-            <div class="services-box">
-                <div class="icon">
-                    <i class='bx bx-bar-chart-alt-2'></i>
-                    <a href="#"><i class="bx bx-arrow-back"></i></a>
-                </div><!-- icon -->
-                <h3>Automações n8n</h3>
-                <p>Desenvolvimento de automações inteligentes utilizando n8n, integrando APIs e sistemas como WhatsApp e
-                    Google Sheets. Criação de fluxos automatizados por eventos ou agendamentos, envio automático de
-                    mensagens, cartões e otimização de tarefas operacionais.</p>
-            </div><!-- services-box -->
+        <!-- Resume Section -->
+        <section class="resume section-padding" id="resume">
+            <div class="container layout-split">
+                <div class="resume-sidebar fade-in">
+                    <h2 class="heading">Por que <span>me contratar?</span></h2>
+                    <p class="desc">Focado em resultados, atuando como Web Designer e entusiasta em automações, com experiência em coleta e análise de dados, incluindo varreduras automatizadas de sites para estratégias de precificação. Perfil analítico, criativo e proativo, com foco em melhoria contínua e eficiência dos processos.</p>
+                    <div class="tabs-buttons">
+                        <button class="resume-btn custom-tab active" data-target="experience">Experiência</button>
+                        <button class="resume-btn custom-tab" data-target="education">Certificados</button>
+                        <button class="resume-btn custom-tab" data-target="skills">Habilidades</button>
+                        <button class="resume-btn custom-tab" data-target="about">Sobre Mim</button>
+                    </div>
+                </div>
 
-            <!-- 3º serviço -->
-            <div class="services-box">
-                <div class="icon">
-                    <i class='bx bx-certification'></i>
-                    <a href="#"><i class="bx bx-arrow-back"></i></a>
-                </div><!-- icon -->
-                <h3>Qualidade & Dados</h3>
-                <p>Atuação no controle e validação da qualidade de dados, com varreduras automatizadas em sites e
-                    aplicações, data cleansing, análise de padrões e apoio a estratégias de pricing e inteligência de
-                    mercado, garantindo informações confiáveis para tomada de decisão.
-                </p>
-            </div><!-- services-box -->
-            <br><br><br><br><br>
-        </div><!-- services-container -->
-    </section><!-- seção de serviços -->
-
-    <!-- resume section -->
-    <section class="resume ">
-        <div class="resume-container">
-            <div class="resume-box">
-                <h2>Por que <span>me contratar?</span></h2>
-                <p class="desc">
-                    Focado em resultados, atuando como Web Designer e entusiasta em automações, com experiência em
-                    coleta e análise de dados, incluindo varreduras automatizadas de sites para estratégias de
-                    precificação. Perfil analítico, criativo e proativo, com foco em melhoria contínua e eficiência dos
-                    processos.
-                </p>
-                <button class="resume-btn active">Experiência</button>
-                <button class="resume-btn">Certificados</button>
-                <button class="resume-btn">Habilidades</button>
-                <button class="resume-btn">Sobre Mim</button>
-            </div><!-- resume-box -->
-
-            <div class="resume-box">
-                <div class="resume-detail experience active">
-                    <div class="resume-conteudo">
-                        <h2 class="heading">Minhas <span>Experiências</span></h2>
-                        <p class="desc">
-                            Estagiário de Qualidade — Zukkin – Inteligência de Preços (Mar/2024 - Mai/2025)
-                        </p>
-                        <div class="resume-list">
-                            <div class="resume-item">
-                                <p>Responsável pela validação e controle da qualidade de dados, garantindo integridade e
-                                    consistência para inteligência de mercado. Atuação em pricing e pesquisas, com
-                                    varreduras automatizadas via ZROBOT para coleta massiva de dados. </p>
+                <div class="resume-content-wrapper glass-panel fade-in scroll-delay-1">
+                    
+                    <!-- Experiência -->
+                    <div class="resume-detail active" id="experience">
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <span class="timeline-date">Mar/2024 - Mai/2025</span>
+                                <h3>Estagiário de Qualidade</h3>
+                                <p class="company">Zukkin – Inteligência de Preços</p>
+                                <p class="job-desc">Responsável pela validação e controle da qualidade de dados, garantindo integridade e consistência para inteligência de mercado. Atuação em pricing e pesquisas, com varreduras automatizadas via ZROBOT para coleta massiva de dados. Aplicação de data cleansing, análise de padrões e inconsistências, automação de tarefas operacionais e apoio à definição de estratégias de precificação e tomada de decisão.</p>
                             </div>
-
-                            <div class="resume-item">
-                                <p>Aplicação de data cleansing, análise de padrões e inconsistências, automação de
-                                    tarefas
-                                    operacionais e apoio à definição de estratégias de precificação e tomada de decisão.
-                                </p>
+                            
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <span class="timeline-date">Dez/2025 - No momento</span>
+                                <h3>Estagiário de TI - Suporte</h3>
+                                <p class="company">Mar Brasil</p>
+                                <p class="job-desc">Atendimento de suporte técnico aos colaboradores, atuando em demandas de hardware, software e rede, além do apoio na configuração, manutenção e atualização de computadores e periféricos. Apoio em atividades de monitoramento e testes de sistemas, suporte às rotinas de TI e contribuição para melhorias internas e organização dos recursos tecnológicos.</p>
                             </div>
-
-                        </div><!-- resume-list -->
+                        </div>
                     </div>
-                    <div class="resume-conteudo">
-                        <p class="desc">
-                            Estagiário de TI - Suporte - Mar Brasil (Dez/2025 - No momento)
-                        </p>
-                        <div class="resume-list">
-                            <div class="resume-item">
-                                <p>Atendimento de suporte técnico aos colaboradores, atuando em demandas de hardware,
-                                    software e rede, além do apoio na configuração, manutenção e atualização de
-                                    computadores e periféricos.</p>
+
+                    <!-- Certificados -->
+                    <div class="resume-detail scrollable-area" id="education">
+                        <div class="cert-focus">
+                            <span class="level-badge">Cursando | Previsão: Dez/2026</span>
+                            <h3>Bacharelado em Ciências da Computação</h3>
+                            <p class="institution">UNIP – Universidade Paulista</p>
+                        </div>
+                        <div class="list-grid">
+                            <div class="card-item glow-border">
+                                <span class="year">2026</span>
+                                <h4>Imersão Automação n8n</h4>
+                                <p>Hashtag (Criação de fluxos automatizados com n8n, Integração de Agentes de IA e de APIs)</p>
                             </div>
-
-                            <div class="resume-item">
-                                <p>Apoio em atividades de monitoramento e testes de sistemas, suporte às rotinas de TI e
-                                    contribuição para melhorias internas e organização dos recursos tecnológicos
-                                </p>
+                            <div class="card-item glow-border">
+                                <span class="year">2024</span>
+                                <h4>OneBitCode</h4>
+                                <p>Front-end (HTML, CSS, JS: eventos e interatividade)</p>
                             </div>
-
-                        </div><!-- resume-list -->
-                    </div>
-                </div><!-- resume-detail -->
-
-
-
-
-                <div class="resume-detail education" id="education">
-                    <h2 class="heading">Meus <span>Certificados</span></h2>
-                    <p class="desc">
-                        Bacharelado em Ciências da Computação UNIP – Cursando | Previsão: Dez/2026<br>
-                    </p>
-
-                    <div class="resume-list">
-                        <div class="resume-item">
-                            <p class="year">2024</p>
-                            <h3>Santander</h3>
-                            <p class="company">Ada Tech</p>
-                            <p> HTML, CSS, Git e Versionamento, Lógica de Programação com JavaScript Básico,
-                                Desenvolvimento Web Básico com JavaScript, Figma para Devs</p>
-                        </div>
-
-                        <div class="resume-item">
-                            <p class="year">2026</p>
-                            <h3>Imersão Automação n8n </h3>
-                            <p class="company">Hashtag</p>
-                            <p> Criação de fluxos automatizados com n8n
-                                Integração de Agentes de IA e de APIs
-                                (WhatsApp, Google Sheets)
-                                Automações orientadas a eventos e
-                                agendamentos.
-                                Envio automático de mensagens e cartões
-                                via WhatsApp.</p>
-                        </div>
-
-                        <div class="resume-item">
-                            <p class="year">2024</p>
-                            <h3>OneBitCode</h3>
-                            <p class="company">Front-end</p>
-                            <p>HTML: Cabeçalho, Seção inicial, Seção sobre clinica, Seção sobre Restaurantes, Rodapé.
-                                CSS: box model, estilos e fontes; JS: eventos
-                                e interatividade</p>
-                        </div>
-
-                        <div class="resume-item">
-                            <p class="year">2023</p>
-                            <h3>Informática sem segredo </h3>
-                            <p class="company">Hotmart</p>
-                            <p> Word: criação, edição e formatação de documentos. Excel: Planilhas, Formatação,
-                                Fórmulas, Funções, Gráficos, Base de Dados, Tabelas.
-                                Power Point: Slides e animação.
-                            </p>
-                        </div>
-
-                        <div class="resume-item">
-                            <p class="year">2021 - 2023</p>
-                            <h3>Hardware</h3>
-                            <p class="company">Evolutime</p>
-                            <p>Sistema Operacional, Arquitetura de Computadores, Manutenção de Computadores e
-                                Periféricos, Virtualização, Redes e Infraestrutura,
-                                Configuração de Servidores Windows, Sistema Operacional Linux e Robótica para
-                                Iniciantes.
-                            </p>
-                        </div>
-
-                        <div class="resume-item">
-                            <p class="year">2023</p>
-                            <h3>Construct 2D</h3>
-                            <p class="company">Evolutime</p>
-                            <p>O que é um jogo 2D, Arte dentro dos jogos, Pixel Art, Design de level e como produzí-lo e
-                                Eventos dentro do Construct 2</p>
-                        </div>
-
-                        <div class="resume-item">
-                            <p class="year">2023</p>
-                            <h3>Controle Financeiro</h3>
-                            <p class="company">Evolutime</p>
-                            <p>Workshop Controle Financeiro Pessoal, Controle Financeiro Familiar e Planilha de Controle
-                                Financeiro.</p>
+                            <div class="card-item glow-border">
+                                <span class="year">2024</span>
+                                <h4>Santander / Ada Tech</h4>
+                                <p>HTML, CSS, Git e Versionamento, Lógica de Programação, Figma para Devs</p>
+                            </div>
+                            <div class="card-item glow-border">
+                                <span class="year">2021 - 2023</span>
+                                <h4>Hardware</h4>
+                                <p>Evolutime (Arquitetura de Computadores, Manutenção, Redes, Linux e Robótica)</p>
+                            </div>
                         </div>
                     </div>
-                </div><!-- resume-detail -->
 
-                <div class="resume-detail skills">
-                    <h2 class="heading">Minhas <span>habilidades</span></h2>
-                    <div class="resume-list">
-                        <div class="resume-item">
-                            <p class="company"><strong>Hard Skills — Desenv. & Automações</strong></p>
-                            <p>HTML, CSS, JavaScript (básico), Bootstrap, Git e GitHub (versionamento), figma para devs
-                                (prototipação), SQL (consultas básicas), criação de sites responsivos e landing pages.
-                                Automações com n8n (fluxos, eventos e integrações)</p>
-                        </div><!-- resume-item -->
-
-                        <div class="resume-item">
-                            <p class="company"><strong>Hard Skills — Dados & Qualidade</strong></p>
-                            <p>Coleta e análise de dados, automatizadas de sites, data cleansing e padronização de
-                                informações, Apoio a estratégias de precificação, garantia de qualidade e consistência
-                                dos dados</p>
-                        </div><!-- resume-item -->
-
-                        <div class="resume-item">
-                            <p class="company"><strong>Soft Skills — Perfil Profissional</strong></p>
-                            <p>Proatividade e adaptabilidade, pensamento analítico e foco em resultados, comunicação
-                                clara e trabalho em equipe, organização e atenção aos detalhes, comprometimento com
-                                melhoria contínua</p>
-                        </div><!-- resume-item -->
-
-                        <div class="resume-item">
-                            <p class="company"><strong>Soft Skills — Rotina & Responsabilidade</strong></p>
-                            <p>Gestão e atualização de sites, organização de informações e processos, cumprimento de
-                                prazos, facilidade em aprender novas tecnologias,</p>
-                        </div><!-- resume-item -->
-                    </div><!-- resume-list -->
-                </div><!-- resume-detail -->
-
-                <div class="resume-detail about">
-                    <h2 class="heading">Sobre <span>Mim.</span></h2>
-                    <p class="desc">
-                        Estudante de Ciência da Computação (7º semestre na UNIP), com experiência no setor de Qualidade
-                        e foco em Web Design e Automações. Atuei por 1 ano e 2 meses na Zukkin com análise de dados,
-                        varreduras automatizadas de sites e pesquisas de preços. Atualmente sou Estagiário de TI Suporte
-                        na Mar Brasil. Conhecimentos em HTML, CSS, JavaScript, Bootstrap, Git, SQL, Figma e n8n.
-                        Proativo, adaptável e orientado a resultados.
-                    </p>
-
-                    <div class="info-grid">
-                        <div>
-                            <strong>Nome </strong> Gustavo Dias de Oliveira
+                    <!-- Habilidades -->
+                    <div class="resume-detail container-fluid" id="skills">
+                        <div class="skill-category">
+                            <h3>Hard Skills — Desenv. & Automações</h3>
+                            <div class="tags">
+                                <span class="tag">HTML</span>
+                                <span class="tag">CSS</span>
+                                <span class="tag">Bootstrap</span>
+                                <span class="tag">Git e GitHub</span>
+                                <span class="tag">Figma para devs</span>
+                                <span class="tag">Automações com n8n</span>
+                            </div>
                         </div>
-
-                        <div>
-                            <strong>Gênero </strong> Masculino
+                        <div class="skill-category mt-4">
+                            <h3>Hard Skills — Dados & Qualidade</h3>
+                            <div class="tags">
+                                <span class="tag">Coleta e análise de dados</span>
+                                <span class="tag">Varreduras automatizadas</span>
+                                <span class="tag">Data cleansing</span>
+                                <span class="tag">Estratégias de precificação</span>
+                                <span class="tag">Garantia de qualidade</span>
+                            </div>
                         </div>
-
-                        <div>
-                            <strong>Idade </strong> 21 anos
-                        </div>
-
-                        <div>
-                            <strong>Status </strong> Solteiro
-                        </div>
-
-                        <div>
-                            <strong>Cidade </strong> Praia Grande - SP
-                        </div>
-
-                        <div>
-                            <strong>Nacionalidade </strong> Brasileiro
-                        </div>
-
-                        <div>
-                            <strong>Área </strong> Web Designer & Automações
-                        </div>
-
-                        <div>
-                            <strong>WhatsApp </strong> (+55) 13 99189-5950
-                        </div>
-
-                        <div>
-                            <strong>Email </strong> gustavodiasdeoliveira72@gmail.com
-                        </div>
-
-                        <div>
-                            <strong>Idiomas </strong> Inglês e Espanhol básico
+                        <div class="skill-category mt-4">
+                            <h3>Soft Skills</h3>
+                            <div class="tags">
+                                <span class="tag">Proatividade</span>
+                                <span class="tag">Adaptabilidade</span>
+                                <span class="tag">Pensamento analítico</span>
+                                <span class="tag">Foco em resultados</span>
+                                <span class="tag">Comunicação clara</span>
+                                <span class="tag">Gestão de prazos</span>
+                            </div>
                         </div>
                     </div>
-                    <br><br><br><br>
-                </div><!-- resume-detail -->
-                <br><br><br><br>
-            </div><!-- resume-box -->
-            <br><br><br><br>
-        </div><!-- resume-container -->
-    </section><!-- resume section -->
 
-    <!-- portfólio section-->
-    <section class="portfolio">
-        <h2 class="heading">Meus <span>Projetos.</span></h2>
-        <div class="portfolio-container">
-            <div class="portfolio-box">
-                <!-- Zukkin - 01 -->
-                <div class="portfolio-detail active">
-                    <p class="numb">01°</p>
-                    <h3>ZBot - Projeto Zukkin</h3>
-                    <p>Mini projeto desenvolvido para a empresa Zukkin, com o objetivo de auxiliar novos estagiários do
-                        time virtual no esclarecimento de dúvidas recorrentes do dia a dia. A robô Mary foi programada
-                        para simular interações e orientar sobre processos como varredura de sites, coleta de dados e
-                        uso do sistema interno.</p>
-                    <div class="tech">
-                        <p>Para saber mais, clique no link abaixo.</p>
+                    <!-- Sobre Mim -->
+                    <div class="resume-detail about-grid" id="about">
+                        <p class="desc lead">Estudante de Ciência da Computação (7º semestre na UNIP), com experiência no setor de Qualidade e foco em Web Design e Automações. Atuei por 1 ano e 2 meses na Zukkin com análise de dados, varreduras automatizadas de sites e pesquisas de preços. Atualmente sou Estagiário de TI Suporte na Mar Brasil. Proativo, adaptável e orientado a resultados.</p>
+                        
+                        <div class="personal-data">
+                            <div class="data-item">
+                                <span class="label">Nome</span>
+                                <span class="value">Gustavo Dias de Oliveira</span>
+                            </div>
+                            <div class="data-item">
+                                <span class="label">Idade</span>
+                                <span class="value">21 anos</span>
+                            </div>
+                            <div class="data-item">
+                                <span class="label">Cidade</span>
+                                <span class="value">Praia Grande - SP</span>
+                            </div>
+                            <div class="data-item">
+                                <span class="label">Email</span>
+                                <span class="value linked">gustavodiasdeoliveira72@gmail.com</span>
+                            </div>
+                            <div class="data-item">
+                                <span class="label">WhatsApp</span>
+                                <span class="value">(+55) 13 99189-5950</span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="live-github">
-                        <a href="https://gustavodiasdeoliveira.github.io/ZBot/varredura.html" target="_blank"><i
-                                class="bx bx-link"></i><span>Link do projeto</span></a>
-                        <a href="https://github.com/GustavoDiasdeOliveira/ZBot" target="_blank"><i
-                                class="bx bxl-github"></i><span>Repositório Github</span></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section class="portfolio section-padding" id="portfolio">
+            <div class="container">
+                <div class="portfolio-header fade-in">
+                    <h2 class="heading">Meus <span>Projetos.</span></h2>
+                </div>
+                
+                <div class="portfolio-showcase glass-panel fade-in scroll-delay-1">
+                    <div class="slider-wrapper" id="project-slider">
+                        <!-- Project 1: ZBot -->
+                        <div class="project-slide active" data-index="0">
+                            <div class="project-info">
+                                <div class="project-header-info">
+                                    <span class="project-num">01°</span>
+                                    <h3>ZBot - Projeto Zukkin</h3>
+                                    <button class="info-toggle" aria-label="Ver detalhes"><i class='bx bx-plus'></i></button>
+                                </div>
+                                <div class="project-details">
+                                    <p>Mini projeto desenvolvido para a empresa Zukkin, com o objetivo de auxiliar novos estagiários do time virtual no esclarecimento de dúvidas recorrentes do dia a dia. A robô Mary foi programada para simular interações e orientar sobre processos como varredura de sites, coleta de dados e uso do sistema interno.</p>
+                                    <div class="tech-stack"><span>Custom JS</span><span>Inteligência de Mercado</span></div>
+                                    <div class="project-links">
+                                         <a href="https://gustavodiasdeoliveira.github.io/ZBot/varredura.html" target="_blank" class="btn outline-btn"><i class="bx bx-link"></i> Link do projeto</a>
+                                         <a href="https://github.com/GustavoDiasdeOliveira/ZBot" target="_blank" class="btn text-btn"><i class="bx bxl-github"></i> GitHub</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-image-cont">
+                                <img src="assets/images/user.jpeg" alt="ZBot" loading="lazy">
+                            </div>
+                        </div>
+                        
+                        <!-- Project 2: Calculadora PP -->
+                        <div class="project-slide" data-index="1">
+                            <div class="project-info">
+                                <div class="project-header-info">
+                                    <span class="project-num">02°</span>
+                                    <h3>Calculadora PP - Projeto Zukkin</h3>
+                                    <button class="info-toggle" aria-label="Ver detalhes"><i class='bx bx-plus'></i></button>
+                                </div>
+                                <div class="project-details">
+                                    <p>Mini projeto para a empresa Zukkin, voltado ao cálculo de valores mínimos e máximos com base em 30% do peso, ajustando quantidades em gramas, mililitros, e quilogramas.</p>
+                                    <div class="tech-stack"><span>Lógica Matemática</span><span>Pricing</span></div>
+                                    <div class="project-links">
+                                         <a href="https://gustavodiasdeoliveira.github.io/Calculadora-PP/" target="_blank" class="btn outline-btn"><i class="bx bx-link"></i> Link do projeto</a>
+                                         <a href="https://github.com/GustavoDiasdeOliveira/Calculadora-PP" target="_blank" class="btn text-btn"><i class="bx bxl-github"></i> GitHub</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-image-cont">
+                                <img src="assets/images/user.jpeg" alt="Calculadora PP" loading="lazy">
+                            </div>
+                        </div>
+
+                        <!-- Project 3: LoginRegister -->
+                        <div class="project-slide" data-index="2">
+                            <div class="project-info">
+                                <div class="project-header-info">
+                                    <span class="project-num">03°</span>
+                                    <h3>LoginRegister</h3>
+                                    <button class="info-toggle" aria-label="Ver detalhes"><i class='bx bx-plus'></i></button>
+                                </div>
+                                <div class="project-details">
+                                    <p>Um sistema de login e cadastro funcional, totalmente responsivo e com design moderno. Uma ótima prática para aprimorar as habilidades em HTML, CSS e JavaScript.</p>
+                                    <div class="tech-stack"><span>Auth Flow</span><span>Forms</span></div>
+                                    <div class="project-links">
+                                         <a href="https://gustavodiasdeoliveira.github.io/LoginRegister/" target="_blank" class="btn outline-btn"><i class="bx bx-link"></i> Link do projeto</a>
+                                         <a href="https://github.com/GustavoDiasdeOliveira/LoginRegister" target="_blank" class="btn text-btn"><i class="bx bxl-github"></i> GitHub</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-image-cont">
+                                <img src="assets/images/developer.jpg" alt="LoginRegister" loading="lazy">
+                            </div>
+                        </div>
+
+                        <!-- Project 4: FOOD Restaurantes -->
+                        <div class="project-slide" data-index="3">
+                            <div class="project-info">
+                                <div class="project-header-info">
+                                    <span class="project-num">04°</span>
+                                    <h3>FOOD Restaurantes</h3>
+                                    <button class="info-toggle" aria-label="Ver detalhes"><i class='bx bx-plus'></i></button>
+                                </div>
+                                <div class="project-details">
+                                    <p>Landing page moderna e totalmente responsiva, ideal para divulgar restaurantes e cardápios online, garantindo ótima experiência em qualquer dispositivo.</p>
+                                    <div class="tech-stack"><span>Responsive Design</span><span>B2C</span></div>
+                                    <div class="project-links">
+                                         <a href="https://gustavodiasdeoliveira.github.io/FOOD-Restaurantes/" target="_blank" class="btn outline-btn"><i class="bx bx-link"></i> Link do projeto</a>
+                                         <a href="https://github.com/GustavoDiasdeOliveira/FOOD-Restaurantes" target="_blank" class="btn text-btn"><i class="bx bxl-github"></i> GitHub</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-image-cont">
+                                <img src="assets/images/portfolio2.jpg" alt="FOOD Restaurantes" loading="lazy">
+                            </div>
+                        </div>
+
+                        <!-- Project 5: Sky Fusion -->
+                        <div class="project-slide" data-index="4">
+                            <div class="project-info">
+                                <div class="project-header-info">
+                                    <span class="project-num">05°</span>
+                                    <h3>Sky Fusion - App de Clima</h3>
+                                    <button class="info-toggle" aria-label="Ver detalhes"><i class='bx bx-plus'></i></button>
+                                </div>
+                                <div class="project-details">
+                                    <p>Aplicativo de clima que oferece previsões precisas e atualizadas, com interface intuitiva e design moderno para facilitar o acesso às informações meteorológicas em qualquer lugar.</p>
+                                    <div class="tech-stack"><span>Weather API</span><span>Dynamic UI</span></div>
+                                    <div class="project-links">
+                                         <a href="https://gustavodiasdeoliveira.github.io/Sky-Fusion-App-Clima/" target="_blank" class="btn outline-btn"><i class="bx bx-link"></i> Link do projeto</a>
+                                         <a href="https://github.com/GustavoDiasdeOliveira/Sky-Fusion-App-Clima" target="_blank" class="btn text-btn"><i class="bx bxl-github"></i> GitHub</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-image-cont">
+                                <img src="assets/images/portfolio3.jpg" alt="Sky Fusion" loading="lazy">
+                            </div>
+                        </div>
+
+                        <!-- Project 6: The Boys -->
+                        <div class="project-slide" data-index="5">
+                            <div class="project-info">
+                                <div class="project-header-info">
+                                    <span class="project-num">06°</span>
+                                    <h3>The Boys</h3>
+                                    <button class="info-toggle" aria-label="Ver detalhes"><i class='bx bx-plus'></i></button>
+                                </div>
+                                <div class="project-details">
+                                    <p>Landing page responsiva inspirada na série The Boys, focada em componentes visuais e temática Dark.</p>
+                                    <div class="tech-stack"><span>Theme Design</span><span>Fansite</span></div>
+                                    <div class="project-links">
+                                         <a href="https://gustavodiasdeoliveira.github.io/The-Boys/" target="_blank" class="btn outline-btn"><i class="bx bx-link"></i> Link do projeto</a>
+                                         <a href="https://github.com/GustavoDiasdeOliveira/The-Boys" target="_blank" class="btn text-btn"><i class="bx bxl-github"></i> GitHub</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-image-cont">
+                                <img src="assets/images/portfolio4.jpg" alt="The Boys" loading="lazy">
+                            </div>
+                        </div>
+
+                        <!-- Project 7: Academia FIT -->
+                        <div class="project-slide" data-index="6">
+                            <div class="project-info">
+                                <div class="project-header-info">
+                                    <span class="project-num">07°</span>
+                                    <h3>Academia FIT</h3>
+                                    <button class="info-toggle" aria-label="Ver detalhes"><i class='bx bx-plus'></i></button>
+                                </div>
+                                <div class="project-details">
+                                    <p>Landing page focada em academia, ideal para apresentar serviços, planos e incentivar a prática de atividades físicas com design moderno e acessível.</p>
+                                    <div class="tech-stack"><span>Fitness UI</span><span>Landing Page</span></div>
+                                    <div class="project-links">
+                                         <a href="https://gustavodiasdeoliveira.github.io/Academia-Fit/" target="_blank" class="btn outline-btn"><i class="bx bx-link"></i> Link do projeto</a>
+                                         <a href="https://github.com/GustavoDiasdeOliveira/Academia-Fit" target="_blank" class="btn text-btn"><i class="bx bxl-github"></i> GitHub</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-image-cont">
+                                <img src="assets/images/portfolio5.jpg" alt="Academia FIT" loading="lazy">
+                            </div>
+                        </div>
+
+                        <!-- Project 8: Motorcycle -->
+                        <div class="project-slide" data-index="7">
+                            <div class="project-info">
+                                <div class="project-header-info">
+                                    <span class="project-num">08°</span>
+                                    <h3>Motorcycle</h3>
+                                    <button class="info-toggle" aria-label="Ver detalhes"><i class='bx bx-plus'></i></button>
+                                </div>
+                                <div class="project-details">
+                                    <p>Landing page para lojas de motos, apresentando modelos com foco em design moderno, preço e acessibilidade.</p>
+                                    <div class="tech-stack"><span>Vendas</span><span>Grid Layout</span></div>
+                                    <div class="project-links">
+                                         <a href="Motorcycle/index.html" target="_blank" class="btn outline-btn"><i class="bx bx-link"></i> Link do projeto</a>
+                                         <a href="https://github.com/GustavoDiasdeOliveira/Portfolio" target="_blank" class="btn text-btn"><i class="bx bxl-github"></i> GitHub</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-image-cont">
+                                <img src="assets/images/portfolio6.jpg" alt="Motorcycle" loading="lazy">
+                            </div>
+                        </div>
+
+                        <!-- Project 9: Dashboard Farma Vision -->
+                        <div class="project-slide" data-index="8">
+                            <div class="project-info">
+                                <div class="project-header-info">
+                                    <span class="project-num">09°</span>
+                                    <h3>Dashboard Farma Vision</h3>
+                                    <button class="info-toggle" aria-label="Ver detalhes"><i class='bx bx-plus'></i></button>
+                                </div>
+                                <div class="project-details">
+                                    <p>Projeto de Extensão da UNIP focado em gestão farmacêutica. Implementação de dashboard voltado à metrificação clínica, hierarquia de cor e Data Visualization UI.</p>
+                                    <div class="tech-stack"><span>Data Mapping</span><span>Acadêmico</span></div>
+                                    <div class="project-links">
+                                         <a href="https://gustavodiasdeoliveira.github.io/dashboardGustavo/" target="_blank" class="btn outline-btn"><i class="bx bx-link"></i> Link do projeto</a>
+                                         <a href="https://github.com/GustavoDiasdeOliveira/dashboardGustavo" target="_blank" class="btn text-btn"><i class="bx bxl-github"></i> GitHub</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-image-cont">
+                                <img src="assets/images/unip.png" alt="Farma Vision" loading="lazy">
+                            </div>
+                        </div>
+
+                        <!-- Project 10: Beauty Glow -->
+                        <div class="project-slide" data-index="9">
+                            <div class="project-info">
+                                <div class="project-header-info">
+                                    <span class="project-num">10°</span>
+                                    <h3>Beauty Glow</h3>
+                                    <button class="info-toggle" aria-label="Ver detalhes"><i class='bx bx-plus'></i></button>
+                                </div>
+                                <div class="project-details">
+                                    <p>Landing page responsiva sobre beleza e maquiagem. Desperte sua beleza natural com um design leve e elegante utilizando HTML, CSS e JS.</p>
+                                    <div class="tech-stack"><span>Beleza</span><span>UX Fluído</span></div>
+                                    <div class="project-links">
+                                         <a href="https://gustavodiasdeoliveira.github.io/BeautyGlow/" target="_blank" class="btn outline-btn"><i class="bx bx-link"></i> Link do projeto</a>
+                                         <a href="https://github.com/GustavoDiasdeOliveira/BeautyGlow" target="_blank" class="btn text-btn"><i class="bx bxl-github"></i> GitHub</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-image-cont">
+                                <img src="assets/images/designer.jpg" alt="Beauty Glow" loading="lazy">
+                            </div>
+                        </div>
+
+                        <!-- Project 11: CP2025 -->
+                        <div class="project-slide" data-index="10">
+                            <div class="project-info">
+                                <div class="project-header-info">
+                                    <span class="project-num">11°</span>
+                                    <h3>Projeto Concursos Público 2025</h3>
+                                    <button class="info-toggle" aria-label="Ver detalhes"><i class='bx bx-plus'></i></button>
+                                </div>
+                                <div class="project-details">
+                                    <p>Cronograma de estudos interativo para PMESP e outros. Checklist por bloco, progresso salvo localmente (LocalStorage), dark mode, filtros de busca, exportação CSV e anotações.</p>
+                                    <div class="tech-stack"><span>SaaS App</span><span>Productivity</span></div>
+                                    <div class="project-links">
+                                         <a href="https://gustavodiasdeoliveira.github.io/gerenciadorConcursoPublico/" target="_blank" class="btn outline-btn"><i class="bx bx-link"></i> Link do Projeto</a>
+                                         <a href="https://github.com/GustavoDiasdeOliveira/gerenciadorConcursoPublico" target="_blank" class="btn text-btn"><i class="bx bxl-github"></i> GitHub</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-image-cont">
+                                <img src="assets/images/militar.jpg" alt="Concursos 2025" loading="lazy">
+                            </div>
+                        </div>
+
+                        <!-- Project 12: Ciber Prime -->
+                        <div class="project-slide" data-index="11">
+                            <div class="project-info">
+                                <div class="project-header-info">
+                                    <span class="project-num">12°</span>
+                                    <h3>Ciber Prime</h3>
+                                    <button class="info-toggle" aria-label="Ver detalhes"><i class='bx bx-plus'></i></button>
+                                </div>
+                                <div class="project-details">
+                                    <p>Landing Page responsiva corporativa. Transformamos ideias em soluções digitais: sites, automação e inteligência de mercado para escalar negócios.</p>
+                                    <div class="tech-stack"><span>Empresarial</span><span>Lead Gen</span></div>
+                                    <div class="project-links">
+                                         <a href="https://gustavodiasdeoliveira.github.io/ciberprime/" target="_blank" class="btn outline-btn"><i class="bx bx-link"></i> Link do projeto</a>
+                                         <a href="https://github.com/GustavoDiasdeOliveira/ciberprime" target="_blank" class="btn text-btn"><i class="bx bxl-github"></i> GitHub</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-image-cont">
+                                <img src="assets/images/LogoCiberPrime.png" alt="Ciber Prime" loading="lazy">
+                            </div>
+                        </div>
+                        <div class="nav-controls fade-in">
+                    <button class="nav-btn" id="prev-project" aria-label="Previous Project"><i class='bx bx-chevron-left'></i></button>
+                    <button class="nav-btn" id="next-project" aria-label="Next Project"><i class='bx bx-chevron-right'></i></button>
+                </div>
+                    </div> <!-- slider-wrapper -->
+                </div> <!-- portfolio-showcase -->
+
+                
+            </div> <!-- container -->
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact section-padding" id="contact">
+            <div class="glow-orb red" style="top: 50%; left: 10%; opacity: 0.15; width: 300px; height: 300px;"></div>
+            <div class="container layout-split">
+                <div class="contact-text fade-in">
+                    <h2 class="heading">Entre em <span>Contato!</span></h2>
+                    <p class="desc">Interessado no meu perfil? Fico à disposição para entrevistas e possíveis oportunidades profissionais. Vamos conversar!</p>
+                    
+                    <div class="info-blocks">
+                        <a href="mailto:gustavodiasdeoliveira72@gmail.com" class="info-card glass-panel group-hover">
+                            <i class='bx bx-envelope'></i>
+                            <div class="content">
+                                <span>Email</span>
+                                <strong>gustavodiasdeoliveira72@gmail.com</strong>
+                            </div>
+                        </a>
+                        
+                        <a href="tel:+5513991895950" class="info-card glass-panel group-hover mt-3">
+                            <i class='bx bx-phone-call'></i>
+                            <div class="content">
+                                <span>Telefone</span>
+                                <strong>(13) 99189-5950</strong>
+                            </div>
+                        </a>
+                        
+                        <div class="info-card glass-panel group-hover mt-3">
+                            <i class='bx bx-map'></i>
+                            <div class="content">
+                                <span>Cidade</span>
+                                <strong>Praia Grande - SP</strong>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Zukkin - 02 -->
-                <div class="portfolio-detail">
-                    <p class="numb">02°</p>
-                    <h3>Calculadora PP - Projeto Zukkin</h3>
-                    <p>Mini projeto para a empresa Zukkin, voltado ao cálculo de valores mínimos e máximos com base em
-                        30% do peso, ajustando quantidades em gramas, mililitros, e quilogramas.</p>
-                    <div class="tech">
-                        <p>Para saber mais, clique no link abaixo.</p>
-                    </div>
-                    <div class="live-github">
-                        <a href="https://gustavodiasdeoliveira.github.io/Calculadora-PP/" target="_blank"><i
-                                class="bx bx-link"></i><span>Link do projeto</span></a>
-                        <a href="https://github.com/GustavoDiasdeOliveira/Calculadora-PP" target="_blank"><i
-                                class="bx bxl-github"></i><span>Repositório Github</span></a>
-                    </div>
-                </div>
-
-                <!-- Fuel CalculatorX - 03 -->
-                <div class="portfolio-detail">
-                    <p class="numb">03°</p>
-                    <h3>LoginRegister</h3>
-                    <p>Um sistema de login e cadastro funcional, totalmente responsivo e com design moderno. Uma ótima
-                        prática para aprimorar as habilidades em HTML, CSS e JavaScript.</p>
-                    <div class="tech">
-                        <p>Para saber mais, clique no link abaixo.</p>
-                    </div>
-                    <div class="live-github">
-                        <a href="https://gustavodiasdeoliveira.github.io/LoginRegister/" target="_blank"><i
-                                class="bx bx-link"></i><span>Link do projeto</span></a>
-                        <a href="https://github.com/GustavoDiasdeOliveira/LoginRegister" target="_blank"><i
-                                class="bx bxl-github"></i><span>Repositório Github</span></a>
-                    </div>
-                </div>
-
-                <!-- FOOD Restaurantes - 04 -->
-                <div class="portfolio-detail">
-                    <p class="numb">04°</p>
-                    <h3>FOOD Restaurantes</h3>
-                    <p>FOOD Restaurantes é uma landing page moderna e totalmente responsiva, ideal para divulgar
-                        restaurantes e cardápios online, garantindo ótima experiência em qualquer dispositivo.</p>
-                    <div class="tech">
-                        <p>Para saber mais, clique no link abaixo.</p>
-                    </div>
-                    <div class="live-github">
-                        <a href="https://gustavodiasdeoliveira.github.io/FOOD-Restaurantes/" target="_blank"><i
-                                class="bx bx-link"></i><span>Link do projeto</span></a>
-                        <a href="https://github.com/GustavoDiasdeOliveira/FOOD-Restaurantes" target="_blank"><i
-                                class="bx bxl-github"></i><span>Repositório Github</span></a>
-                    </div>
-                </div>
-
-                <!-- Sky Fusion - 05 -->
-                <div class="portfolio-detail">
-                    <p class="numb">05</p>
-                    <h3>Sky Fusion - App de Clima</h3>
-                    <p>Sky Fusion é um aplicativo de clima que oferece previsões precisas e atualizadas, com interface
-                        intuitiva e design moderno para facilitar o acesso às informações meteorológicas em qualquer
-                        lugar.</p>
-                    <div class="tech">
-                        <p>Para saber mais, clique no link abaixo.</p>
-                    </div>
-                    <div class="live-github">
-                        <a href="https://gustavodiasdeoliveira.github.io/Sky-Fusion-App-Clima/" target="_blank"><i
-                                class="bx bx-link"></i><span>Link do projeto</span></a>
-                        <a href="https://github.com/GustavoDiasdeOliveira/Sky-Fusion-App-Clima" target="_blank"><i
-                                class="bx bxl-github"></i><span>Repositório Github</span></a>
-                    </div>
-                </div>
-
-                <!-- The Boys - 06 -->
-                <div class="portfolio-detail">
-                    <p class="numb">06°</p>
-                    <h3>The Boys</h3>
-                    <p>The Boys é uma landing page responsiva inspirada na série The Boys.</p>
-                    <div class="tech">
-                        <p>Para saber mais, clique no link abaixo.</p>
-                    </div>
-                    <div class="live-github">
-                        <a href="https://gustavodiasdeoliveira.github.io/The-Boys/" target="_blank"><i
-                                class="bx bx-link"></i><span>Link do projeto</span></a>
-                        <a href="https://github.com/GustavoDiasdeOliveira/The-Boys" target="_blank"><i
-                                class="bx bxl-github"></i><span>Repositório Github</span></a>
-                    </div>
-                </div>
-
-                <!-- Academia FIT - 07 -->
-                <div class="portfolio-detail">
-                    <p class="numb">07°</p>
-                    <h3>Academia FIT</h3>
-                    <p>Academia FIT é uma landing page responsiva focada em academia, ideal para apresentar serviços,
-                        planos e incentivar a prática de atividades físicas com design moderno e acessível.</p>
-                    <div class="tech">
-                        <p>Para saber mais, clique no link abaixo.</p>
-                    </div>
-                    <div class="live-github">
-                        <a href="https://gustavodiasdeoliveira.github.io/Academia-Fit/" target="_blank"><i
-                                class="bx bx-link"></i><span>Link do projeto</span></a>
-                        <a href="https://github.com/GustavoDiasdeOliveira/Academia-Fit" target="_blank"><i
-                                class="bx bxl-github"></i><span>Repositório Github</span></a>
-                    </div>
-                </div>
-
-                <!-- Motorcycle - 08 -->
-                <div class="portfolio-detail">
-                    <p class="numb">08°</p>
-                    <h3>Motorcycle</h3>
-                    <p>Motorcycle é uma landing page responsiva para lojas de motos, com design moderno preço e
-                        acessível.</p>
-                    <div class="tech">
-                        <p>Para saber mais, clique no link abaixo.</p>
-                    </div>
-                    <div class="live-github">
-                        <a href="Motorcycle/index.html" target="_blank"><i class="bx bx-link"></i><span>Link do
-                                projeto</span></a>
-                        <a href="https://github.com/GustavoDiasdeOliveira/Portfolio" target="_blank"><i
-                                class="bx bxl-github"></i><span>Repositório Github</span></a>
-                    </div>
-                </div>
-
-                <!-- Dashboard Farma Vision - 09 -->
-                <div class="portfolio-detail">
-                    <p class="numb">09°</p>
-                    <h3>Dashboard Farma Vision</h3>
-                    <p>Projeto de Extensão da UNIP em andamento. Integrantes: Gustavo Dias de Oliveira, Luisa Frugoli
-                        Valente Lopes,
-                        Kaiky Souza Proença de Andrade, Daniel Toledo Mattos de Souza, Cristopher de Souza e Gabriel
-                        Matias Oliveira</p>
-                    <div class="tech">
-                        <p>Para saber mais, clique no link abaixo.</p>
-                    </div>
-                    <div class="live-github">
-                        <a href="https://gustavodiasdeoliveira.github.io/dashboardGustavo/" target="_blank"><i
-                                class="bx bx-link"></i><span>Link do projeto</span></a>
-                        <a href="https://github.com/GustavoDiasdeOliveira/dashboardGustavo" target="_blank"><i
-                                class="bx bxl-github"></i><span>Repositório Github</span></a>
-                    </div>
-                </div>
-
-                <!-- BeautyGlow - 10 -->
-                <div class="portfolio-detail">
-                    <p class="numb">10°</p>
-                    <h3>Beauty Glow</h3>
-                    <p>Beauty Glow desperte sua beleza natural - Uma landing page responsiva sobre maquiagem com Html,
-                        Css e JavaScript</p>
-                    <div class="tech">
-                        <p>Para saber mais, clique no link abaixo.</p>
-                    </div>
-                    <div class="live-github">
-                        <a href="https://gustavodiasdeoliveira.github.io/BeautyGlow/" target="_blank"><i
-                                class="bx bx-link"></i><span>Link do projeto</span></a>
-                        <a href="https://github.com/GustavoDiasdeOliveira/BeautyGlow" target="_blank"><i
-                                class="bx bxl-github"></i><span>Repositório Github</span></a>
-                    </div>
-                </div>
-
-                <!-- Projeto PMESP 2025 - 11 -->
-                <div class="portfolio-detail">
-                    <p class="numb">11°</p>
-                    <h3>Projeto Concursos Público 2025</h3>
-                    <p>Cronograma de estudos interativo para os concursos: PMESP, Capatazia e muito mais. O projeto está
-                        em andamento porém possui checklist por bloco,
-                        progresso salvo localmente, dark mode, filtros de busca, exportação CSV, anotação e layout
-                        responsivo com
-                        menu mobile. Ideal para organizar 8 semanas de preparação completa.</p>
-                    <div class="tech">
-                        <p>Para saber mais, clique no link abaixo.</p>
-                    </div>
-                    <div class="live-github">
-                        <a href="https://gustavodiasdeoliveira.github.io/gerenciadorConcursoPublico/" target="_blank"><i
-                                class="bx bx-link"></i><span>Link do Projeto</span></a>
-                        <a href="https://github.com/GustavoDiasdeOliveira/gerenciadorConcursoPublico" target="_blank"><i
-                                class="bx bxl-github"></i><span>Repositório Github</span></a>
-                    </div>
-                </div>
-
-                <!-- Projeto Ciber Prime - 12 -->
-                <div class="portfolio-detail">
-                    <p class="numb">12°</p>
-                    <h3>Ciber Prime</h3>
-                    <p>Uma Landing Page responsiva de uma empresa com objetivo de transformamos suas ideias em soluções
-                        digitais. Criação de sites, landing pages e inteligência de mercado. Levando seus negócios para
-                        o
-                        próximo nível digital.</p>
-                    <div class="tech">
-                        <p>Para saber mais, clique no link abaixo.</p>
-                    </div>
-                    <div class="live-github">
-                        <a href="https://gustavodiasdeoliveira.github.io/ciberprime/" target="_blank"><i
-                                class="bx bx-link"></i><span>Link do projeto</span></a>
-                        <a href="https://github.com/GustavoDiasdeOliveira/ciberprime" target="_blank"><i
-                                class="bx bxl-github"></i><span>Repositório Github</span></a>
-                    </div>
-                </div>
-
-            </div><!-- portfolio-box -->
-
-            <div class="portfolio-box">
-                <div class="portfolio-carousel">
-                    <div class="img-slide">
-
-                        <!-- Imagem 1 -->
-                        <div class="img-item">
-                            <img src="assets/images/user.jpeg">
+                <div class="contact-form glass-panel fade-in scroll-delay-1">
+                    <form action="https://formsubmit.co/gustavodiasdeoliveira72@gmail.com" method="POST" class="auth-form">
+                        <div class="input-row">
+                            <div class="input-group">
+                                <input type="text" name="nome" id="name" required placeholder=" ">
+                                <label for="name">Seu Nome/Empresa</label>
+                            </div>
+                            <div class="input-group">
+                                <input type="email" name="email" id="email" required placeholder=" ">
+                                <label for="email">Endereço de E-mail</label>
+                            </div>
                         </div>
 
-                        <!-- Imagem 2 -->
-                        <div class="img-item">
-                            <img src="assets/images/user.jpeg">
+                        <div class="input-group full">
+                            <input type="text" name="assunto" id="subject" required placeholder=" ">
+                            <label for="subject">Motivo da Abordagem</label>
+                        </div>
+                        
+                        <div class="input-group full">
+                            <textarea name="mensagem" id="message" rows="4" required placeholder=" "></textarea>
+                            <label for="message">Descreva a oferta ou desafio arquitetônico</label>
                         </div>
 
-                        <!-- Imagem 3 -->
-                        <div class="img-item">
-                            <img src="assets/images/developer.jpg">
-                        </div><!-- img-item -->
+                        <!-- FormSubmit settings -->
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_template" value="box">
 
-                        <!-- Imagem 4 -->
-                        <div class="img-item">
-                            <img src="assets/images/portfolio2.jpg">
-                        </div><!-- img-item -->
-
-                        <!-- Imagem 5 -->
-                        <div class="img-item">
-                            <img src="assets/images/portfolio3.jpg">
-                        </div><!-- img-item -->
-
-                        <!-- Imagem 6 -->
-                        <div class="img-item">
-                            <img src="assets/images/portfolio4.jpg">
-                        </div><!-- img-item -->
-
-                        <!-- Imagem 7 -->
-                        <div class="img-item">
-                            <img src="assets/images/portfolio5.jpg">
-                        </div><!-- img-item -->
-
-                        <!-- Imagem 8 -->
-                        <div class="img-item">
-                            <img src="assets/images/portfolio6.jpg">
-                        </div><!-- img-item -->
-
-                        <!-- Imagem 9 -->
-                        <div class="img-item">
-                            <img src="assets/images/unip.png">
-                        </div><!-- img-item -->
-
-                        <!-- Imagem 10 -->
-                        <div class="img-item">
-                            <img src="assets/images/designer.jpg">
-                        </div><!-- img-item -->
-
-                        <!-- Imagem 11 -->
-                        <div class="img-item">
-                            <img src="assets/images/militar.jpg">
-                        </div><!-- img-item -->
-
-                        <!-- Imagem 12 -->
-                        <div class="img-item">
-                            <img src="assets/images/LogoCiberPrime.png">
-                        </div><!-- img-item -->
-                    </div><!-- img-slide -->
-                </div><!-- portfolio-carousel -->
-
-                <div class="navigation">
-                    <button class="arrow-left disabled"><i class="bx bx-chevron-left"></i></button>
-                    <button class="arrow-right"><i class="bx bx-chevron-right"></i></button>
+                        <button type="submit" class="btn hover-fill submit-btn">Enviar mensagem <i class='bx bx-send'></i></button>
+                    </form>
                 </div>
-                <br><br><br><br><br><br>
-            </div><!-- portfolio-box -->
-        </div><!-- portfolio-container -->
-    </section><!-- portfolio section -->
+            </div>
+        </section>
+    </main>
 
-    <!-- contact section -->
-    <section class="contact">
-        <div class="contact-container">
-            <div class="contact-box">
-                <h2>Entre em <span>Contato!</span></h2>
-                <p class="desc">Interessado no meu perfil? Fico à disposição para entrevistas e possíveis oportunidades
-                    profissionais. Vamos conversar!</p>
-                <div class="contact-detail">
-                    <i class="bx bxs-phone"></i>
-                    <div class="detail">
-                        <p id="desc">Telefone</p>
-                        <p>(13) 99189-5950</p>
-                    </div><!-- detail -->
-                </div><!-- contact-detail -->
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/5513991895950" class="whatsapp-float" target="_blank" aria-label="Fale comigo no WhatsApp">
+        <i class='bx bxl-whatsapp'></i>
+    </a>
 
-                <div class="contact-detail">
-                    <i class="bx bxs-envelope"></i>
-                    <div class="detail">
-                        <p id="desc">Email</p>
-                        <p>gustavodiasdeoliveira72@gmail.com</p>
-                    </div><!-- detail -->
-                </div><!-- contact-detail -->
+    <!-- Base Footer -->
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2026 Gustavo Dias. Portfólio desenvolvido com foco em excelência.</p>
+            <div class="back-top" id="back-top" aria-label="Voltar para o Topo">
+                <i class='bx bx-up-arrow-alt'></i>
+            </div>
+        </div>
+    </footer>
 
-                <div class="contact-detail">
-                    <i class="bx bxs-map"></i>
-                    <div class="detail">
-                        <p id="desc">Cidade</p>
-                        <p>Praia Grande - SP</p>
-                    </div><!-- detail -->
-                </div><!-- contact-detail -->
-            </div><!-- contact-box -->
-
-            <div class="contact-box">
-                <form action="https://formsubmit.co/gustavodiasdeoliveira72@gmail.com" method="POST">
-                    <h2 class="heading">Contato<span>.</span></h2>
-                    <div class="field-box">
-                        <input type="text" name="nome" placeholder="Nome Completo" required>
-                        <input type="email" name="email" placeholder="Email" required>
-                        <input type="tel" name="telefone" placeholder="Telefone" required>
-                        <input type="text" name="assunto" placeholder="Assunto do Email" required>
-                        <textarea name="mensagem" placeholder="Sua mensagem" required></textarea>
-                    </div><!-- field-box -->
-                    <button type="submit" class="btn">Enviar</button>
-                </form><br><br><br><br><br>
-            </div><!-- contact-box -->
-        </div><!-- contact-container -->
-    </section>
-
-
-    <!-- custom js -->
-    <script src="assets/js/downloadCV.js"></script> <!-- download CV -->
-    <script src="assets/js/script.js"></script>
+    <!-- SCRIPTS CORE -->
+    <script src="assets/js/script.js" defer></script>
 </body>
 
 </html>
