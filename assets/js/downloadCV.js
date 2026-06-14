@@ -6,8 +6,8 @@ document.getElementById("download-btn").addEventListener("click", function(event
 
     setTimeout(() => {
         const a = document.createElement("a");
-        a.href = "dowload/Currículo 2025.pdf";
-        a.download = "Currículo 2025.pdf";
+        a.href = "download/Gustavo_Dias_de_Oliveira_CV (1).pdf";
+        a.download = "Gustavo_Dias_de_Oliveira_CV (1).pdf";
         a.click(); // Inicia o download
 
         btn.innerHTML = "<b>Download CV</b>";
