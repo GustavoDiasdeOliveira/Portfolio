@@ -1,15 +1,44 @@
-document.getElementById("download-btn").addEventListener("click", function(event) {
-    event.preventDefault(); // Impede o comportamento padrão
+document.addEventListener("DOMContentLoaded", () => {
 
-    const btn = event.target;
-    btn.innerHTML = "Baixando...";
+    const btn = document.getElementById("download-btn");
 
-    setTimeout(() => {
-        const a = document.createElement("a");
-        a.href = "download/Gustavo_Dias_de_Oliveira_CV (1).pdf";
-        a.download = "Gustavo_Dias_de_Oliveira_CV (1).pdf";
-        a.click(); // Inicia o download
+    if (!btn) return;
 
-        btn.innerHTML = "<b>Download CV</b>";
-    }, 2000);
-}); 
+    btn.addEventListener("click", function (e) {
+
+        e.preventDefault();
+
+        if (btn.classList.contains("downloading")) return;
+
+        btn.classList.add("downloading");
+
+        const textoOriginal = btn.innerHTML;
+
+        btn.innerHTML = `
+            <i class='bx bx-loader-alt bx-spin'></i>
+            Baixando...
+        `;
+
+        setTimeout(() => {
+
+            const link = document.createElement("a");
+
+            link.href = "dowload/Gustavo_Dias_de_Oliveira_CV.pdf";
+
+            link.download = "Gustavo_Dias_de_Oliveira_CV.pdf";
+
+            document.body.appendChild(link);
+
+            link.click();
+
+            document.body.removeChild(link);
+
+            btn.innerHTML = textoOriginal;
+
+            btn.classList.remove("downloading");
+
+        }, 1800);
+
+    });
+
+});
